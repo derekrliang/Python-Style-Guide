@@ -18,8 +18,8 @@ class Spam:
        self.breakfast = "Eggs"
        
 s = Spam
-s.brakefast = 'Pastrami'  # 'brakefast' is now a new instance attribute.
-s.brakefast
+s.breakfast = 'Pastrami'  # 'breakfast' is now a new instance attribute.
+s.breakfast
 >> Pastrami
 ```
 * If an attribute should exist, it should already be known at the time of class definition.
