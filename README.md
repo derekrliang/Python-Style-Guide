@@ -24,3 +24,20 @@ s.breakfast
 ```
 * If an attribute should exist, it should already be known at the time of class definition.
 * Ex: Benny accidently adds a new instance attribute to a class by mistakenly assigning a nonexistent attribute. That attribute is never used because the intended attribute was never updated.
+
+## Building Lists
+* Lists should be built using list comprehension whenever possible, over for loop and array append i.e.
+```
+/* recommended */
+a = [i for i in range(10)]
+
+a # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+```
+/* avoid */
+for i in range(10):
+      a.append(i)
+
+a # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
